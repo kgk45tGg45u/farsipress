@@ -24,6 +24,5 @@ class FakeJob < ApplicationJob
         end
       end
     end
-
   end
 end

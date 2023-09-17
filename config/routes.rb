@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   authenticate :user, ->(user) { user.admin? } do
     mount Sidekiq::Web => '/sidekiq'
   end
-  resources :sandbox, only: [ :index ]
+  resources :sandbox, only: [ :index, :show ]
   # Defines the root path route ("/")
   # root "articles#index"
 end

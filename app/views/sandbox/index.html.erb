@@ -1,5 +1,5 @@
 <h1>hello from Sandbox</h1>
 <% @all.each do |item| %>
-  <%= item.title %>
+  <%= link_to item.title, sandbox_path(item) %>
   <br>
 <% end %>

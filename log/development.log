@@ -3926,3 +3926,302 @@ Completed 200 OK in 281ms (Views: 26.5ms | ActiveRecord: 37.6ms | Allocations: 4
   [1m[36mSandbox Load (0.4ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
   [1m[36mSandbox Load (0.3ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
   [1m[36mSandbox Load (4.5ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+Started GET "/sandbox/1" for ::1 at 2023-09-17 20:35:12 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 56.9ms | Allocations: 8944)
+
+
+  
+RuntimeError ():
+  
+app/controllers/sandbox_controller.rb:8:in `show'
+Started GET "/sandbox/1" for ::1 at 2023-09-17 20:36:44 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (0.7ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:8:in `show'
+Completed 404 Not Found in 38ms (ActiveRecord: 14.2ms | Allocations: 8360)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sandbox with 'id'=1):
+  
+app/controllers/sandbox_controller.rb:8:in `show'
+Started GET "/sandbox/1" for ::1 at 2023-09-17 20:37:54 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (0.3ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:8:in `show'
+Completed 404 Not Found in 12ms (ActiveRecord: 0.7ms | Allocations: 2876)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sandbox with 'id'=1):
+  
+app/controllers/sandbox_controller.rb:8:in `show'
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:37:57 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (0.8ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 3601)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 3686)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.1ms | Allocations: 6428)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sandbox"}, missing required keys: [:id]
+Did you mean?  sandbox_url):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to item.title, to: sandbox_path  %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:38:52 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (1.9ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2022)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2107)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.1ms | Allocations: 4968)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sandbox", :id=>nil}, missing required keys: [:id]):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to item.title, to: sandbox_path(@sandbox)  %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started PUT "/__web_console/repl_sessions/6d3154bb82009b43a675b1466f3402b2" for ::1 at 2023-09-17 20:39:07 +0200
+Started PUT "/__web_console/repl_sessions/6d3154bb82009b43a675b1466f3402b2" for ::1 at 2023-09-17 20:39:07 +0200
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:39:35 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (43.2ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 66.6ms | Allocations: 2016)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 2101)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 52.1ms | Allocations: 4959)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sandbox", :id=>nil}, missing required keys: [:id]):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to "hello", to: sandbox_path(@sandbox)  %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:40:47 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (ActiveRecord: 9.1ms | Allocations: 6809)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sandbox without an ID):
+  
+app/controllers/sandbox_controller.rb:5:in `index'
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:42:03 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (0.9ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 7450)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 7535)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 7.1ms | Allocations: 14723)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sandbox' for #<ActionView::Base:0x00000000055bb8>
+
+@output_buffer.safe_append='  '.freeze;@output_buffer.append=( link_to "hello", to: sandbox_path(sandbox)  );@output_buffer.safe_append='
+                                                                                                 ^^^^^^^
+Did you mean?  sandbox_url):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to "hello", to: sandbox_path(sandbox)  %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:43:52 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (8.5ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2220)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2305)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 8.7ms | Allocations: 5169)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sandbox"}, missing required keys: [:id]
+Did you mean?  sandbox_url):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to "hello", sandbox_path %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:44:11 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (5.2ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 5736)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 5821)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 6.1ms | Allocations: 8687)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sandbox' for #<ActionView::Base:0x000000000561d0>
+
+@output_buffer.safe_append='  '.freeze;@output_buffer.append=( link_to "hello", sandbox );@output_buffer.safe_append='
+                                                                                ^^^^^^^
+Did you mean?  sandbox_url):
+    1: <h1>hello from Sandbox</h1>
+    2: <% @all.each do |item| %>
+    3:   <%= link_to "hello", sandbox %>
+    4:   <br>
+    5: <% end %>
+  
+app/views/sandbox/index.html.erb:3
+app/views/sandbox/index.html.erb:2
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:45:57 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 25ms (ActiveRecord: 5.6ms | Allocations: 6804)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sandbox without an ID):
+  
+app/controllers/sandbox_controller.rb:5:in `index'
+Started GET "/sandbox/26" for ::1 at 2023-09-17 20:46:10 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (1.5ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/show.html.erb within layouts/application
+  Rendered sandbox/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 152)
+  Rendered shared/_navbar.html.erb (Duration: 6.5ms | Allocations: 768)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 27671)
+Completed 200 OK in 116ms (Views: 90.8ms | ActiveRecord: 3.8ms | Allocations: 33373)
+
+
+Started GET "/sandbox/26" for ::1 at 2023-09-17 20:48:01 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (10.2ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/show.html.erb within layouts/application
+  Rendered sandbox/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 148)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 755)
+  Rendered shared/_flashes.html.erb (Duration: 1.7ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 63.3ms | Allocations: 10601)
+Completed 200 OK in 99ms (Views: 68.7ms | ActiveRecord: 12.3ms | Allocations: 14059)
+
+
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:48:05 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.2ms | Allocations: 2544)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sandbox without an ID):
+  
+app/controllers/sandbox_controller.rb:5:in `index'
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:48:15 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (0.7ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2981)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 340)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 29562)
+Completed 200 OK in 100ms (Views: 63.1ms | ActiveRecord: 8.0ms | Allocations: 36432)
+
+
+Started GET "/sandbox/" for ::1 at 2023-09-17 20:48:30 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (1.9ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1281)
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 719)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 11680)
+Completed 200 OK in 56ms (Views: 43.0ms | ActiveRecord: 2.1ms | Allocations: 14611)
+
+
+Started GET "/sandbox/21" for ::1 at 2023-09-17 20:48:33 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (0.3ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/show.html.erb within layouts/application
+  Rendered sandbox/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 120)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 308)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9621)
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 0.4ms | Allocations: 12995)
+
+
+Started GET "/sandbox/21" for ::1 at 2023-09-17 20:50:21 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (0.2ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/show.html.erb within layouts/application
+  Rendered sandbox/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 174)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 768)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 27427)
+Completed 200 OK in 85ms (Views: 55.3ms | ActiveRecord: 6.9ms | Allocations: 37490)
+
+
