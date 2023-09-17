@@ -3122,3 +3122,191 @@ JSON::ParserError (859: unexpected token at '<?xml version="1.0" encoding="UTF-8
 </channel></rss>'):
   
 app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:51:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 545ms (ActiveRecord: 0.0ms | Allocations: 35050)
+
+
+  
+NameError (undefined local variable or method `feed' for #<PagesController:0x0000000000cf30>
+
+      puts "Title: #{feed.channel.title}"
+                     ^^^^
+Did you mean?  @feed):
+  
+app/controllers/pages_controller.rb:12:in `block in home'
+app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:51:17 +0200
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms | Allocations: 29539)
+
+
+  
+NameError (undefined local variable or method `feed' for #<PagesController:0x0000000000d2f0>
+
+      puts "Title: #{feed.channel.title}"
+                     ^^^^
+Did you mean?  @feed):
+  
+app/controllers/pages_controller.rb:12:in `block in home'
+app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:51:27 +0200
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms | Allocations: 29538)
+
+
+  
+NameError (undefined local variable or method `feed' for #<PagesController:0x0000000000d638>
+
+      puts "Title: #{feed.channel.title}"
+                     ^^^^
+Did you mean?  @feed):
+  
+app/controllers/pages_controller.rb:12:in `block in home'
+app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:51:45 +0200
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms | Allocations: 29530)
+
+
+  
+NameError (undefined local variable or method `feed' for #<PagesController:0x0000000000d9a8>
+
+      puts "Title: #{feed.channel.title}"
+                     ^^^^
+Did you mean?  @feed):
+  
+app/controllers/pages_controller.rb:12:in `block in home'
+app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:52:36 +0200
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms | Allocations: 29620)
+
+
+  
+NameError (undefined local variable or method `feed' for #<PagesController:0x000000000121d8>
+
+      puts "Title: #{feed.channel.title}"
+                     ^^^^
+Did you mean?  @feed):
+  
+app/controllers/pages_controller.rb:12:in `block in home'
+app/controllers/pages_controller.rb:10:in `home'
+Started GET "/" for ::1 at 2023-09-17 17:53:05 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 667.3ms | Allocations: 44258)
+  Rendered shared/_pishkhan.html.erb (Duration: 4.5ms | Allocations: 1155)
+  Rendered shared/_section.html.erb (Duration: 1.7ms | Allocations: 190)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 684.5ms | Allocations: 48750)
+  Rendered layout layouts/application.html.erb (Duration: 685.0ms | Allocations: 48835)
+Completed 500 Internal Server Error in 895ms (ActiveRecord: 0.0ms | Allocations: 76038)
+
+
+  
+ActionView::Template::Error (undefined method `items' for nil:NilClass
+
+'.freeze;       @feed.items.each do |item| 
+                     ^^^^^^):
+    33:         </div>
+    34:       </div>
+    35:     </div>
+    36:       <% @feed.items.each do |item| %>
+    37:         Item: <%= item.title %>
+    38:       <% end %>
+    39: </div>
+  
+app/views/pages/home.html.erb:36
+Started GET "/" for ::1 at 2023-09-17 17:54:43 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 1.5ms | Allocations: 738)
+  Rendered shared/_pishkhan.html.erb (Duration: 0.8ms | Allocations: 966)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.7ms | Allocations: 2479)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 23.4ms | Allocations: 9747)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 252)
+  Rendered layout layouts/application.html.erb (Duration: 74.5ms | Allocations: 39638)
+Completed 200 OK in 272ms (Views: 69.1ms | ActiveRecord: 6.7ms | Allocations: 66354)
+
+
+Started GET "/" for ::1 at 2023-09-17 17:55:18 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 2.8ms | Allocations: 850)
+  Rendered shared/_pishkhan.html.erb (Duration: 1.9ms | Allocations: 1146)
+  Rendered shared/_section.html.erb (Duration: 1.1ms | Allocations: 179)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.2ms | Allocations: 6018)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6103)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.0ms | Allocations: 33082)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<RSS::Rss::Channel::Item:0x000000010bc4fde0 @parent=nil, @converter=nil, @do_validate=true, @title="مجله شامگاهی", @link="https://www.radiofarda.com/a/32576179.html", @description="در ساعات پیش رو، روز خود را با مجله شامگاهی رادیو فردا به پایان ببرید. مجموعه‌ای متنوع از آنچه در طول روز در سراسر جهان اتفاق افتاده است. ", @source=nil, @enclosure=nil, @comments=nil, @author=nil, @pubDate=2023-09-17 19:00:00 +0330, @guid=#<RSS::Rss::Channel::Item::Guid:0x000000010bc46e48 @parent=nil, @converter=nil, @do_validate=true, @isPermaLink=nil, @content="https://www.radiofarda.com/a/32576179.html">, @content_encoded=nil, @itunes_author=nil, @itunes_block=nil, @itunes_explicit=nil, @itunes_keywords=nil, @itunes_subtitle=nil, @itunes_summary=nil, @itunes_name=nil, @itunes_email=nil, @itunes_duration=nil, @itunes_image=nil, @itunes_season=nil, @itunes_episode=nil, @itunes_episodeType=nil, @itunes_title=nil, @trackback_ping=nil, @category=[#<RSS::Rss::Channel::Item::Category:0x000000010bc3f968 @parent=nil, @converter=nil, @do_validate=true, @domain=nil, @content="مجله شامگاهی">], @dc_title=[], @dc_description=[], @dc_creator=[], @dc_subject=[], @dc_publisher=[], @dc_contributor=[], @dc_type=[], @dc_format=[], @dc_identifier=[], @dc_source=[], @dc_language=[], @dc_relation=[], @dc_coverage=[], @dc_rights=[], @dc_date=[], @trackback_about=[]>
+
+        content: '.freeze;@output_buffer.append=( item.content );@output_buffer.safe_append='
+                                                      ^^^^^^^^
+Did you mean?  convert):
+    35:     </div>
+    36:       <% @feed.items.each do |item| %>
+    37:         Item: <%= item.title %>
+    38:         content: <%= item.content %>
+    39:       <% end %>
+    40: </div>
+  
+app/views/pages/home.html.erb:38
+app/views/pages/home.html.erb:36:in `each'
+app/views/pages/home.html.erb:36
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:35 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:36 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:46 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:47 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:56 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:58 +0200
+Started PUT "/__web_console/repl_sessions/05ac65b085a0233e741600da706d8d2e" for ::1 at 2023-09-17 17:55:58 +0200
+Started GET "/" for ::1 at 2023-09-17 17:56:23 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 1.9ms | Allocations: 856)
+  Rendered shared/_pishkhan.html.erb (Duration: 2.2ms | Allocations: 1146)
+  Rendered shared/_section.html.erb (Duration: 10.4ms | Allocations: 179)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 18.1ms | Allocations: 3486)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | Allocations: 1673)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 15383)
+Completed 200 OK in 277ms (Views: 40.9ms | ActiveRecord: 0.2ms | Allocations: 42385)
+
+
