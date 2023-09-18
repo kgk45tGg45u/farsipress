@@ -1,4 +1,26 @@
-<h1>Sandbox show</h1>
-<%= @sandbox.title %>
-<hr>
-<%= @sandbox.content %>
+<div class="dashboard-container">
+  <h3><%= @sandbox.title %></h3>
+  <br>
+  <p><%= @sandbox.content %></p>
+
+  <br>
+  <hr>
+
+  <p>این هم متن ادیت شده:</p>
+
+  <%= simple_form_for(@article) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :title, input_html: { value: @sandbox.edited_title } %>
+    <%= f.input :content, as: :text, input_html: { value: @sandbox.edited_content, class: "textbox" } %>
+    <%= f.input :author %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+  <% end %>
+
+</div>

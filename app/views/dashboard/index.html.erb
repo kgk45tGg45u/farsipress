@@ -1,24 +1,26 @@
-<h1>به داشبورد خوش اومدین</h1>
-<hr>
-<h2> از این مقالات آماده یکی را برای ویرایش انتخاب کنید: </h2>
+<div class="dashboard-container">
+  <h1>به داشبورد خوش اومدین</h1>
+  <hr>
+  <h2> از این مقالات آماده یکی را برای ویرایش انتخاب کنید: </h2>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">موضوع</th>
-      <th scope="col">منبع</th>
-      <th scope="col">انتخاب</th>
-    </tr>
-  </thead>
-  <tbody>
-  <% @sandboxes.each do |item, index| %>
-    <tr>
-      <th scope="row"><%= index %></th>
-      <td><%= item.title %></td>
-      <td><%= item.source %></td>
-      <td>Choose</td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">موضوع</th>
+        <th scope="col">منبع</th>
+        <th scope="col">انتخاب</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @sandboxes.each_with_index do |item, index| %>
+      <tr>
+        <th scope="row"><%= index+1 %></th>
+        <td><%= item.title %></td>
+        <td><%= item.source %></td>
+        <td><%= link_to "انتخاب", sandbox_path(item) %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,9 +1,12 @@
 class DashboardController < ApplicationController
 
   def index
-    fetch_articles
+    # fetch_articles
     @sandboxes = Sandbox.all
+  end
 
+  def show
+    @sandbox = Sandbox.find(params[:id])
   end
 
   private
@@ -19,24 +22,72 @@ class DashboardController < ApplicationController
     end
 
     # START RADIOFARDA
-
     require 'rss'
     require 'open-uri'
     url = 'https://www.radiofarda.com/rss/'
     URI.open(url) do |rss|
       feed = RSS::Parser.parse(rss)
-      puts "Title: #{feed.channel.title}"
       feed.items.each do |item|
-        puts "Item: #{item.title}"
         if item.description != ''
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'Radio Farda')
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا')
           sandbox.save!
         end
       end
     end
+    # END RADIOFARDA
 
-    # END RADIO FARDA
+    # BEGIN DW
+    require 'rss'
+    require 'open-uri'
+    url = 'http://rss.dw-world.de/xml/rss-per_politik_volltext'
+    URI.open(url) do |rss|
+      feed = RSS::Parser.parse(rss)
+      feed.items.each do |item|
+        if item.description != ''
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'دویچه وله')
+          sandbox.save!
+        end
+      end
+    end
+    # END DW
+
+    #BEGIN ILNA
+    require 'rss'
+    require 'open-uri'
+    url = 'http://ilna.ir/news/rss.cfm?type=1'
+    URI.open(url) do |rss|
+      feed = RSS::Parser.parse(rss)
+      feed.items.each do |item|
+        if item.description != ''
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا')
+          sandbox.save!
+        end
+      end
+    end
+    #END ILNA
+
+    # #BEGIN ENTEKHAB
+    # require 'rss'
+    # require 'open-uri'
+    # url = 'http://www.entekhab.ir/fa/rss/allnews'
+    # URI.open(url) do |rss|
+    #   feed = RSS::Parser.parse(rss)
+    #   feed.items.each do |item|
+    #     if item.description != ''
+    #       sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا')
+    #       sandbox.save!
+    #     end
+    #   end
+    # end
+    # #END ENTEKHAB
+
   end
-
+  
+  sandboxall = Sandbox.all
+  sandboxall.each do |sandbox|
+    if sandbox.content.length > 500
+      sandbox.destroy!
+    end
+  end
 
 end
