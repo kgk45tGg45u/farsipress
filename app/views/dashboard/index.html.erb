@@ -1,4 +1,24 @@
 <h1>به داشبورد خوش اومدین</h1>
 <hr>
 <h2> از این مقالات آماده یکی را برای ویرایش انتخاب کنید: </h2>
-<%= render 'sandbox/index' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">موضوع</th>
+      <th scope="col">منبع</th>
+      <th scope="col">انتخاب</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @sandboxes.each do |item, index| %>
+    <tr>
+      <th scope="row"><%= index %></th>
+      <td><%= item.title %></td>
+      <td><%= item.source %></td>
+      <td>Choose</td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
