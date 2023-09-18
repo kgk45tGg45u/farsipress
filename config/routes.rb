@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
   resources :sandbox, only: [ :index, :show ]
+  resources :dashboard, only: [ :index ]
   # Defines the root path route ("/")
   # root "articles#index"
 end

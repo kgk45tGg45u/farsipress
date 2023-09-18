@@ -4259,3 +4259,126 @@ Migrating to CreateArticles (20230918073225)
   [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5243453273811330480)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for ::1 at 2023-09-18 09:37:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1418)
+  Rendered shared/_navbar.html.erb (Duration: 6.9ms | Allocations: 780)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 513.2ms | Allocations: 72587)
+Completed 200 OK in 601ms (Views: 518.9ms | ActiveRecord: 7.2ms | Allocations: 88792)
+
+
+Started GET "/articles/new" for ::1 at 2023-09-18 09:37:31 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 125.8ms | Allocations: 18664)
+  Rendered articles/new.html.erb within layouts/application (Duration: 127.8ms | Allocations: 18991)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 307)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 143.7ms | Allocations: 28396)
+Completed 200 OK in 157ms (Views: 144.2ms | ActiveRecord: 2.8ms | Allocations: 35921)
+
+
+Started GET "/articles/new" for ::1 at 2023-09-18 09:39:27 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 6.9ms | Allocations: 4881)
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 5210)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 708)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 15577)
+Completed 200 OK in 48ms (Views: 37.4ms | ActiveRecord: 0.4ms | Allocations: 18583)
+
+
+Started GET "/" for ::1 at 2023-09-18 09:40:19 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 8.2ms | Allocations: 874)
+  Rendered shared/_pishkhan.html.erb (Duration: 2.5ms | Allocations: 1149)
+  Rendered shared/_section.html.erb (Duration: 2.6ms | Allocations: 185)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 3.4ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 63.0ms | Allocations: 5754)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 5852)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms | Allocations: 6691)
+
+
+  
+ActionView::Template::Error (undefined method `items' for nil:NilClass
+
+'.freeze;       @feed.items.each do |item| 
+                     ^^^^^^):
+    33:         </div>
+    34:       </div>
+    35:     </div>
+    36:       <% @feed.items.each do |item| %>
+    37:         Item: <%= item.title %>
+    38:         content: <%= item.description %>
+    39:       <% end %>
+  
+app/views/pages/home.html.erb:36
+Started GET "/sandbox" for ::1 at 2023-09-18 09:40:24 +0200
+Processing by SandboxController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/index.html.erb within layouts/application
+  [1m[36mSandbox Load (2.6ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/sandbox/index.html.erb:2
+  Rendered sandbox/index.html.erb within layouts/application (Duration: 30.8ms | Allocations: 3959)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 335)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 13733)
+Completed 200 OK in 106ms (Views: 58.2ms | ActiveRecord: 10.9ms | Allocations: 17081)
+
+
+Started GET "/dashboard" for ::1 at 2023-09-18 09:44:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+Started GET "/dashboard" for ::1 at 2023-09-18 09:51:31 +0200
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2944)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3032)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 11.4ms | Allocations: 12498)
+
+
+  
+ActionView::Template::Error (Missing partial sandbox/_index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/balsamico/code/farsipress.com/app/views"
+  * "/Users/balsamico/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/devise-4.9.2/app/views"
+  * "/Users/balsamico/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/turbo-rails-1.4.0/app/views"
+  * "/Users/balsamico/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.8/app/views"
+  * "/Users/balsamico/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.8/app/views"
+
+Did you mean?  shared/navbar
+               shared/flashes
+               shared/section
+               shared/pishkhan
+               action_text/contents/content
+               layouts/action_text/contents/content):
+    1: <h1>به داشبورد خوش اومدین</h1>
+    2: <hr>
+    3: <h2> از این مقالات آماده یکی را برای ویرایش انتخاب کنید: </h2>
+    4: <%= render 'sandbox/index' %>
+  
+app/views/dashboard/index.html.erb:4
