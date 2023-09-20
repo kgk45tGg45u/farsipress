@@ -29,7 +29,7 @@ class DashboardController < ApplicationController
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
         if item.description != ''
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا')
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا', photo_url: item.enclosure.url)
           sandbox.save!
         end
       end
@@ -37,18 +37,18 @@ class DashboardController < ApplicationController
     # END RADIOFARDA
 
     # BEGIN ISNA
-    require 'rss'
-    require 'open-uri'
-    url = 'http://isna.ir/fa/all/feed'
-    URI.open(url) do |rss|
-      feed = RSS::Parser.parse(rss)
-      feed.items.each do |item|
-        if item.description != ''
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایسنا')
-          sandbox.save!
-        end
-      end
-    end
+    # require 'rss'
+    # require 'open-uri'
+    # url = 'http://isna.ir/fa/all/feed'
+    # URI.open(url) do |rss|
+    #   feed = RSS::Parser.parse(rss)
+    #   feed.items.each do |item|
+    #     if item.description != ''
+    #       sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایسنا')
+    #       sandbox.save!
+    #     end
+    #   end
+    # end
     # END ISNA
 
     #BEGIN ILNA
@@ -59,7 +59,7 @@ class DashboardController < ApplicationController
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
         if item.description != ''
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا')
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا', photo_url: item.enclosure.url)
           sandbox.save!
         end
       end
