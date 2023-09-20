@@ -1,9 +1,12 @@
 <div class="header-news">
   <div class="col-12">
 
-    <%= image_tag("articles/africa-2-1238855.jpeg", alt: "Edit Entry") %>
+    <%= link_to cl_image_tag(@headern.photo.key, crop: :fill), article_path(@headern) %>
   </div>
   <div class="header-news-text">
-  <p>رئیس جمهور روسیه از پالایشگاه آبادان دیدن کرد</p>
+    <p><%= @headern.title %></p>
+  </div>
+  <div class="header-news-kholase">
+    <p><%= @kholase %> <%= link_to "ادامه", article_path(@headern) %></p>
   </div>
 </div>

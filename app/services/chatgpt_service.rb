@@ -8,7 +8,7 @@ class ChatgptService
     @options = {
       headers: {
         'Content-Type' => 'application/json',
-        'Authorization' => "Bearer #{chatgpt_api_key}"
+        'Authorization' => "Bearer #{Rails.application.credentials.chatgpt_api_key}"
       }
     }
     @api_url = 'https://api.openai.com/v1/chat/completions'
