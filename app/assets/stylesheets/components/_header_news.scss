@@ -1,5 +1,6 @@
 .header-news {
-    img {
+  img {
+  // background-size: cover;
   width: 100%;
   border-radius: 4px;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.20);
@@ -17,7 +18,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 5px;
+  padding: 8px;
+  padding-bottom: 0;
+    p {
+  margin-bottom: 0rem !important;
+  }
+}
+
+.header-news-kholase {
+  font-size: 13px;
+  padding: 8px;
 }
 
 // @media screen and (min-width: 480px) {

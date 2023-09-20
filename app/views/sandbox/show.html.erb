@@ -15,6 +15,7 @@
   <div class="form-inputs">
     <%= f.input :title, input_html: { value: @sandbox.edited_title } %>
     <%= f.input :content, as: :text, input_html: { value: @sandbox.edited_content, class: "textbox" } %>
+    <%= f.input :photo, as: :file %>
     <%= f.input :author %>
   </div>
 

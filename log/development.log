@@ -8340,3 +8340,1512 @@ FOREIGN KEY ("blob_id")
   [1m[36mActiveRecord::InternalMetadata Load (43.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5243453273811330480)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mArticle Load (44.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Started GET "/dashboard" for ::1 at 2023-09-20 18:39:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSandbox Load (3.5ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/controllers/dashboard_controller.rb:87:in `<class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.0ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 213]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (44.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (2.1ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 214]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 215]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 216]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 217]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 218]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 219]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 220]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.9ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 221]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 222]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 223]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 224]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 225]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 226]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 227]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 228]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.9ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 229]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 230]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 231]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.7ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 232]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 233]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 234]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 235]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (5.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 236]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 237]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 238]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.9ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 239]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.9ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 240]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 241]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 242]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 243]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 244]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 245]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 246]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 247]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 248]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 249]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.8ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 250]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 251]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.8ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 252]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 255]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 256]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 257]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (25.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 260]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 261]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (2.9ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 262]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 263]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 264]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 267]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.8ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 269]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 270]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 271]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 272]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 273]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 274]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 275]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 276]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 277]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (5.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 278]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 279]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 280]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 281]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 282]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (5.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 283]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 284]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 285]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (2.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 286]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 287]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 288]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 289]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (5.7ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 290]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (86.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 291]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (29.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (5.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 292]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.5ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 293]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.6ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 294]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.8ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 295]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 296]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 297]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 298]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 299]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 300]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 301]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 302]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 303]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 304]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 305]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 306]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 307]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 308]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 309]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 310]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 311]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 312]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 315]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 316]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 317]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.0ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 320]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 321]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.7ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 322]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 323]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.7ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 324]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 327]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 329]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 330]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 331]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mSandbox Destroy (1.2ms)[0m  [1m[31mDELETE FROM "sandboxes" WHERE "sandboxes"."id" = $1[0m  [["id", 332]]
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/dashboard_controller.rb:89:in `block in <class:DashboardController>'
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mSandbox Load (0.3ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes"[0m
+  ↳ app/views/dashboard/index.html.erb:16:in `each_with_index'
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2889)
+  Rendered shared/_navbar.html.erb (Duration: 6.7ms | Allocations: 788)
+  Rendered shared/_flashes.html.erb (Duration: 9.4ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 10770.8ms | Allocations: 230649)
+Completed 200 OK in 10830ms (Views: 10775.7ms | ActiveRecord: 8.1ms | Allocations: 243837)
+
+
+Started GET "/sandbox/28" for ::1 at 2023-09-20 18:39:54 +0200
+Processing by SandboxController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSandbox Load (0.2ms)[0m  [1m[34mSELECT "sandboxes".* FROM "sandboxes" WHERE "sandboxes"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/sandbox_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sandbox/show.html.erb within layouts/application
+  Rendered sandbox/show.html.erb within layouts/application (Duration: 68.0ms | Allocations: 16109)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 347)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 25984)
+Completed 200 OK in 108ms (Views: 83.6ms | ActiveRecord: 3.8ms | Allocations: 36124)
+
+
+Started POST "/articles" for ::1 at 2023-09-20 18:40:22 +0200
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"مثال تایتل", "content"=>"در آخرین مرحله از تفاهم تبادل زندانیان میان ایران و آمریکا، هواپیمای حامل پنج زندانی آزادشده آمریکایی در دوحه به زمینه نشست. این هواپیما از جمله شامل دو عضو خانواده دو تن از این زندانیان است که قرار است آنها را در بازگشت به آمریکا همراهی کنند.\r\n    در این زمینه یک مقام ارشد دولت آمریکا به رادیوفردا گفت که اخبار مربوط به ترک هواپیمای حامل زندانیان آمریکایی به مقصد قطر را تأیید می‌کند.\r\n    همزمان خبرگزاری‌ها گزارش کردند که دو زندانی ایرانی آزادشده در آمریکا که تمایل به بازگشت به ایران داشتند، به دوحه قطر رسیده‌اند. پرس‌تی‌وی، شبکه خبری انگلیسی‌زبان وابسته به رادیو و تلویزیون حکومتی ایران (صداوسیما)، این دو تن را مهرداد معین انصاری و رضا سرهنگ‌پور معرفی کرده است.\r\n    در این میان، جو بایدن، رئیس جمهور آمریکا، در بیانیه‌ای با ابراز خرسندی از آزادی پنج شهروند آمریکایی که در ایران زندانی بودند، از دولت‌های قطر، عمان، سوئیس و کره جنوبی به عنوان شرکای واشینگتن و تلاش آن‌ها برای محقق شدن این امر قدردانی کرد.\r\n    آقای بایدن همچنین از شیخ تمیم بن حمد آل ثانی، امیر قطر و هیثم بن طارق، پادشاه عمان، به‌شکل ویژه قدردانی کرده است که به گفتۀ او، دستیابی به توافق با تهران را در طول ماه‌های دشوار و هم‌سو با دیپلماسی اصولی آمریکا تسهیل کردند.\r\n    او تصریح کرده است که سیامک نمازی، مراد طاهباز، عماد شرقی و دو شهروند دیگر آمریکا که به‌دلایل شخصی مایل به افشای نام خود نبودند، پس از «تحمل سال‌ها درد و رنج و تعلیق» به‌زودی به عزیزان خود ملحق خواهند شد.\r\n    رئیس جمهور ایالات متحده همچنین تأکید کرد که هم‌زمان با خوشامدگویی به آمریکایی‌های آزاد شده، بار دیگر به تمام شهروندان آمریکا «خطرات جدی» سفر به ایران را یادآوری می‌کند: «دارندگان گذرنامۀ آمریکایی نباید به آن‌جا [ایران] سفر کنند.»\r\n    جو بایدن از شهروندان آمریکا خواست هشدار وزارت خارجۀ این کشور در مورد سفر به ایران را جدی بگیرند و در صورت بی‌توجهی به این هشدار، انتظار تضمین آزادی خود را نداشته باشند.\r\n    آقای بایدن سپس با اشاره به تحریم اعمال‌شده علیه محمود احمدی‌نژاد و وزارت اطلاعات جمهوری اسلامی، «رژیم ایران» را فراخوانده است تا «روایت کاملی از آن‌چه بر باب لوینسن رفته‌است» ارائه دهد و تأکید کرده که خانوادۀ او سزاوار دریافت پاسخ پرسش‌های خود هستند.\r\n    ", "photo"=>#<ActionDispatch::Http::UploadedFile:0x0000000114e502a8 @tempfile=#<Tempfile:/var/folders/57/wsd57pbx3rdgq4c0p1prj8440000gn/T/RackMultipart20230920-82172-h4rcoe.jpg>, @content_type="image/jpeg", @original_filename="b02987de-c622-4c88-be56-3d9bd923f676.jpg", @headers="Content-Disposition: form-data; name=\"article[photo]\"; filename=\"b02987de-c622-4c88-be56-3d9bd923f676.jpg\"\r\nContent-Type: image/jpeg\r\n">, "author"=>"بیژن"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mArticle Create (41.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "date", "author", "published", "category", "original", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "مثال تایتل"], ["content", "در آخرین مرحله از تفاهم تبادل زندانیان میان ایران و آمریکا، هواپیمای حامل پنج زندانی آزادشده آمریکایی در دوحه به زمینه نشست. این هواپیما از جمله شامل دو عضو خانواده دو تن از این زندانیان است که قرار است آنها را در بازگشت به آمریکا همراهی کنند.\r\n    در این زمینه یک مقام ارشد دولت آمریکا به رادیوفردا گفت که اخبار مربوط به ترک هواپیمای حامل زندانیان آمریکایی به مقصد قطر را تأیید می‌کند.\r\n    همزمان خبرگزاری‌ها گزارش کردند که دو زندانی ایرانی آزادشده در آمریکا که تمایل به بازگشت به ایران داشتند، به دوحه قطر رسیده‌اند. پرس‌تی‌وی، شبکه خبری انگلیسی‌زبان وابسته به رادیو و تلویزیون حکومتی ایران (صداوسیما)، این دو تن را مهرداد معین انصاری و رضا سرهنگ‌پور معرفی کرده است.\r\n    در این میان، جو بایدن، رئیس جمهور آمریکا، در بیانیه‌ای با ابراز خرسندی از آزادی پنج شهروند آمریکایی که در ایران زندانی بودند، از دولت‌های قطر، عمان، سوئیس و کره جنوبی به عنوان شرکای واشینگتن و تلاش آن‌ها برای محقق شدن این امر قدردانی کرد.\r\n    آقای بایدن همچنین از شیخ تمیم بن حمد آل ثانی، امیر قطر و هیثم بن طارق، پادشاه عمان، به‌شکل ویژه قدردانی کرده است که به گفتۀ او، دستیابی به توافق با تهران را در طول ماه‌های دشوار و هم‌سو با دیپلماسی اصولی آمریکا تسهیل کردند.\r\n    او تصریح کرده است که سیامک نمازی، مراد طاهباز، عماد شرقی و دو شهروند دیگر آمریکا که به‌دلایل شخصی مایل به افشای نام خود نبودند، پس از «تحمل سال‌ها درد و رنج و تعلیق» به‌زودی به عزیزان خود ملحق خواهند شد.\r\n    رئیس جمهور ایالات متحده همچنین تأکید کرد که هم‌زمان با خوشامدگویی به آمریکایی‌های آزاد شده، بار دیگر به تمام شهروندان آمریکا «خطرات جدی» سفر به ایران را یادآوری می‌کند: «دارندگان گذرنامۀ آمریکایی نباید به آن‌جا [ایران] سفر کنند.»\r\n    جو بایدن از شهروندان آمریکا خواست هشدار وزارت خارجۀ این کشور در مورد سفر به ایران را جدی بگیرند و در صورت بی‌توجهی به این هشدار، انتظار تضمین آزادی خود را نداشته باشند.\r\n    آقای بایدن سپس با اشاره به تحریم اعمال‌شده علیه محمود احمدی‌نژاد و وزارت اطلاعات جمهوری اسلامی، «رژیم ایران» را فراخوانده است تا «روایت کاملی از آن‌چه بر باب لوینسن رفته‌است» ارائه دهد و تأکید کرده که خانوادۀ او سزاوار دریافت پاسخ پرسش‌های خود هستند.\r\n    "], ["date", nil], ["author", "بیژن"], ["published", nil], ["category", nil], ["original", nil], ["created_at", "2023-09-20 16:40:22.334290"], ["updated_at", "2023-09-20 16:40:22.334290"]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Load (44.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" INNER JOIN "active_storage_attachments" ON "active_storage_blobs"."id" = "active_storage_attachments"."blob_id" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["key", "jypixv8al214998lfd40jshz9ron"], ["filename", "b02987de-c622-4c88-be56-3d9bd923f676.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "cloudinary"], ["byte_size", 136034], ["checksum", "wQFqRpAxJ2JUTPr+E1tOfQ=="], ["created_at", "2023-09-20 16:40:22.479159"]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (44.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Article"], ["record_id", 2], ["blob_id", 1], ["created_at", "2023-09-20 16:40:22.481850"]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mArticle Update (0.7ms)[0m  [1m[33mUPDATE "articles" SET "updated_at" = $1 WHERE "articles"."id" = $2[0m  [["updated_at", "2023-09-20 16:40:22.528950"], ["id", 2]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+[36m  Cloudinary Storage (1500.2ms) [0m[32mUploaded file to key: jypixv8al214998lfd40jshz9ron (checksum: wQFqRpAxJ2JUTPr+E1tOfQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 08484ebf-aed5-4e66-be2c-9f104b2b54da) to Sidekiq(default) with arguments: #<GlobalID:0x0000000115413c30 @uri=#<URI::GID gid://farsipress-com/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 1845ms (ActiveRecord: 142.8ms | Allocations: 185885)
+
+
+Started GET "/articles/2" for ::1 at 2023-09-20 18:40:24 +0200
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:63:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_article.html.erb (Duration: 2.0ms | Allocations: 341)
+  Rendered articles/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1424)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 336)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 11459)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 0.5ms | Allocations: 15498)
+
+
+Started GET "/articles" for ::1 at 2023-09-20 18:40:28 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  Rendered articles/_article.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered articles/_article.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1147)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 302)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 10734)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 13148)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:40:54 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 7.2ms | Allocations: 871)
+  Rendered shared/_pishkhan.html.erb (Duration: 2.0ms | Allocations: 1157)
+  Rendered shared/_section.html.erb (Duration: 1.2ms | Allocations: 183)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 28.3ms | Allocations: 5758)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 5856)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 6695)
+
+
+  
+ActionView::Template::Error (undefined method `items' for nil:NilClass
+
+'.freeze;       @feed.items.each do |item| 
+                     ^^^^^^):
+    33:         </div>
+    34:       </div>
+    35:     </div>
+    36:       <% @feed.items.each do |item| %>
+    37:         Item: <%= item.title %>
+    38:         content: <%= item.description %>
+    39:       <% end %>
+  
+app/views/pages/home.html.erb:36
+Started GET "/" for ::1 at 2023-09-20 18:41:28 +0200
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 2.7ms | Allocations: 869)
+  Rendered shared/_pishkhan.html.erb (Duration: 4.4ms | Allocations: 1154)
+  Rendered shared/_section.html.erb (Duration: 1.2ms | Allocations: 179)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.6ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.3ms | Allocations: 3373)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.1ms | Allocations: 1691)
+  Rendered shared/_flashes.html.erb (Duration: 1.5ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 15813)
+Completed 200 OK in 72ms (Views: 55.0ms | ActiveRecord: 0.3ms | Allocations: 16754)
+
+
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2023-09-20 18:44:29 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 1.7ms | Allocations: 1188)
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1627)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1713)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 6.6ms | Allocations: 7697)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="header-news">
+  <div class="col-12">
+
+    <%= <%= cl_image_tag @article.photo.key, crop: :fill %>
+  </div>
+  <div class="header-news-text">
+  <p>رئیس جمهور روسیه از پالایشگاه آبادان دیدن کرد</p>
+  </div>
+</div>
+
+):
+1:    <div class="header-news">
+2:      <div class="col-12">
+3:    
+4:        <%= <%= cl_image_tag @article.photo.key, crop: :fill %>
+5:      </div>
+6:      <div class="header-news-text">
+7:      <p>رئیس جمهور روسیه از پالایشگاه آبادان دیدن کرد</p>
+8:      </div>
+9:    </div>
+  
+app/views/shared/_header_news.html.erb:4: syntax error, unexpected '<'
+app/views/shared/_header_news.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/shared/_header_news.html.erb:4: syntax error, unexpected '<'
+app/views/shared/_header_news.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/shared/_header_news.html.erb:4: syntax error, unexpected '<'
+app/views/shared/_header_news.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/shared/_header_news.html.erb:4: syntax error, unexpected '<'
+app/views/shared/_header_news.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/pages/home.html.erb:5
+Started GET "/" for ::1 at 2023-09-20 18:44:38 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_header_news.html.erb (Duration: 3.2ms | Allocations: 1965)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2405)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2490)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 4123)
+
+
+  
+ActionView::Template::Error (undefined method `photo' for nil:NilClass
+
+    '.freeze;@output_buffer.append=( cl_image_tag @article.photo.key, crop: :fill );@output_buffer.safe_append='
+                                                          ^^^^^^):
+    1: <div class="header-news">
+    2:   <div class="col-12">
+    3: 
+    4:     <%= cl_image_tag @article.photo.key, crop: :fill %>
+    5:   </div>
+    6:   <div class="header-news-text">
+    7:   <p>رئیس جمهور روسیه از پالایشگاه آبادان دیدن کرد</p>
+  
+app/views/shared/_header_news.html.erb:4
+app/views/pages/home.html.erb:5
+Started GET "/" for ::1 at 2023-09-20 18:45:00 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 56.7ms | Allocations: 14070)
+  Rendered shared/_pishkhan.html.erb (Duration: 8.1ms | Allocations: 1652)
+  Rendered shared/_section.html.erb (Duration: 1.0ms | Allocations: 178)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 73.9ms | Allocations: 17093)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 12.4ms | Allocations: 4182)
+  Rendered shared/_flashes.html.erb (Duration: 1.0ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 159.1ms | Allocations: 50916)
+Completed 200 OK in 172ms (Views: 156.4ms | ActiveRecord: 11.8ms | Allocations: 52585)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:45:49 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 18.5ms | Allocations: 2218)
+  Rendered shared/_pishkhan.html.erb (Duration: 14.2ms | Allocations: 1611)
+  Rendered shared/_section.html.erb (Duration: 2.2ms | Allocations: 178)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 44.9ms | Allocations: 5176)
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 34.5ms | Allocations: 1534)
+  Rendered shared/_flashes.html.erb (Duration: 2.5ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 158.7ms | Allocations: 17447)
+Completed 200 OK in 189ms (Views: 150.3ms | ActiveRecord: 18.9ms | Allocations: 19029)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:48:18 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 5.2ms | Allocations: 5362)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/pages_controller.rb:6:in `home'
+Started GET "/" for ::1 at 2023-09-20 18:48:46 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 42.7ms | Allocations: 13904)
+  Rendered shared/_pishkhan.html.erb (Duration: 5.4ms | Allocations: 1652)
+  Rendered shared/_section.html.erb (Duration: 5.2ms | Allocations: 178)
+  Rendered shared/_section.html.erb (Duration: 0.3ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 62.5ms | Allocations: 16928)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 16.6ms | Allocations: 4182)
+  Rendered shared/_flashes.html.erb (Duration: 1.8ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 147.4ms | Allocations: 50737)
+Completed 200 OK in 176ms (Views: 140.8ms | ActiveRecord: 13.5ms | Allocations: 56660)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:49:50 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 14.2ms | Allocations: 2233)
+  Rendered shared/_pishkhan.html.erb (Duration: 6.5ms | Allocations: 1611)
+  Rendered shared/_section.html.erb (Duration: 0.9ms | Allocations: 178)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 46.8ms | Allocations: 5188)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 5.6ms | Allocations: 1534)
+  Rendered shared/_flashes.html.erb (Duration: 0.7ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 84.7ms | Allocations: 17242)
+Completed 200 OK in 101ms (Views: 86.8ms | ActiveRecord: 1.5ms | Allocations: 18825)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:51:21 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (28.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 35.8ms | Allocations: 1813)
+  Rendered shared/_pishkhan.html.erb (Duration: 32.3ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.5ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 72.0ms | Allocations: 3834)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 1090)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8926.1ms | Allocations: 89026)
+Completed 200 OK in 8946ms (Views: 8897.0ms | ActiveRecord: 30.1ms | Allocations: 89944)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:52:14 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (100.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (34.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 52.2ms | Allocations: 1813)
+  Rendered shared/_pishkhan.html.erb (Duration: 6.4ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 62.9ms | Allocations: 3834)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.7ms | Allocations: 1090)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8739.9ms | Allocations: 88722)
+Completed 200 OK in 8865ms (Views: 8703.8ms | ActiveRecord: 138.3ms | Allocations: 89617)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:53:50 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 47.6ms | Allocations: 14707)
+  Rendered shared/_pishkhan.html.erb (Duration: 4.5ms | Allocations: 1654)
+  Rendered shared/_section.html.erb (Duration: 2.7ms | Allocations: 167)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 58.6ms | Allocations: 17728)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 21.4ms | Allocations: 4164)
+  Rendered shared/_flashes.html.erb (Duration: 1.9ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 8552.4ms | Allocations: 125659)
+Completed 200 OK in 8572ms (Views: 8548.5ms | ActiveRecord: 12.0ms | Allocations: 131660)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:56:28 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (20.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (9.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 67.3ms | Allocations: 1909)
+  Rendered shared/_pishkhan.html.erb (Duration: 47.5ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 118.4ms | Allocations: 3930)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.9ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8933.0ms | Allocations: 88914)
+Completed 200 OK in 8964ms (Views: 8905.0ms | ActiveRecord: 31.4ms | Allocations: 89848)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:57:30 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (12.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 19.9ms | Allocations: 1892)
+  Rendered shared/_pishkhan.html.erb (Duration: 12.1ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 34.0ms | Allocations: 3913)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 2.8ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8466.7ms | Allocations: 88876)
+Completed 200 OK in 8503ms (Views: 8452.3ms | ActiveRecord: 15.8ms | Allocations: 89771)
+
+
+Started GET "/" for ::1 at 2023-09-20 18:58:26 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (6.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 19.5ms | Allocations: 1892)
+  Rendered shared/_pishkhan.html.erb (Duration: 9.6ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 32.5ms | Allocations: 3913)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.9ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8555.1ms | Allocations: 89045)
+Completed 200 OK in 8574ms (Views: 8548.7ms | ActiveRecord: 7.4ms | Allocations: 89940)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:06:26 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 9.6ms | Allocations: 1895)
+  Rendered shared/_pishkhan.html.erb (Duration: 4.4ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 19.2ms | Allocations: 3916)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 8.5ms | Allocations: 1083)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 87.8ms | Allocations: 14914)
+Completed 200 OK in 309ms (Views: 85.6ms | ActiveRecord: 11.9ms | Allocations: 18959)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:07:10 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (3.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (13.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 28.4ms | Allocations: 1890)
+  Rendered shared/_pishkhan.html.erb (Duration: 9.5ms | Allocations: 1310)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 40.5ms | Allocations: 3916)
+  Rendered layout layouts/application.html.erb (Duration: 1220.5ms | Allocations: 37733)
+Completed 500 Internal Server Error in 1224ms (ActiveRecord: 17.1ms | Allocations: 38618)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...n-bottom: 0rem;": expected "}", was "!important"
+        on line 22:23 of app/assets/stylesheets/components/_header_news.scss
+        from line 6:1 of app/assets/stylesheets/components/_index.scss
+        from line 11:1 of app/assets/stylesheets/application.scss
+>>   margin-bottom: 0rem; !important
+
+   ----------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/components/_header_news.scss:22
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2023-09-20 19:07:34 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 8.3ms | Allocations: 1890)
+  Rendered shared/_pishkhan.html.erb (Duration: 15.0ms | Allocations: 1310)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.3ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 27.3ms | Allocations: 3916)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 7.9ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8707.4ms | Allocations: 89028)
+Completed 200 OK in 8712ms (Views: 8705.9ms | ActiveRecord: 2.2ms | Allocations: 89923)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:08:30 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (5.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 20.9ms | Allocations: 1890)
+  Rendered shared/_pishkhan.html.erb (Duration: 19.9ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 50.5ms | Allocations: 3911)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.4ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 137.0ms | Allocations: 14889)
+Completed 200 OK in 150ms (Views: 130.3ms | ActiveRecord: 7.6ms | Allocations: 15784)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:09:39 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (23.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (6.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 17.2ms | Allocations: 1890)
+  Rendered shared/_pishkhan.html.erb (Duration: 11.4ms | Allocations: 1310)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.4ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 36.3ms | Allocations: 3916)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.0ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 8820.1ms | Allocations: 88878)
+Completed 200 OK in 8880ms (Views: 8811.6ms | ActiveRecord: 32.6ms | Allocations: 89773)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:16:15 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 36.7ms | Allocations: 1895)
+  Rendered shared/_pishkhan.html.erb (Duration: 8.1ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 47.3ms | Allocations: 3916)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.8ms | Allocations: 1083)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 9325.6ms | Allocations: 88884)
+Completed 200 OK in 9503ms (Views: 9329.4ms | ActiveRecord: 25.1ms | Allocations: 92813)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:16:38 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 8.8ms | Allocations: 1890)
+  Rendered shared/_pishkhan.html.erb (Duration: 5.7ms | Allocations: 1305)
+  Rendered shared/_section.html.erb (Duration: 1.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 18.7ms | Allocations: 3911)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.3ms | Allocations: 1081)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 9070.4ms | Allocations: 89206)
+Completed 200 OK in 9078ms (Views: 9067.9ms | ActiveRecord: 4.7ms | Allocations: 90101)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:20:50 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 7.9ms | Allocations: 8539)
+
+
+  
+NoMethodError (undefined method `truncate' for #<PagesController:0x0000000002d398>
+
+    @kholase = @headern..truncate(300, separator: ' ')
+                         ^^^^^^^^
+Did you mean?  trust):
+  
+app/controllers/pages_controller.rb:6:in `home'
+Started GET "/" for ::1 at 2023-09-20 19:21:01 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.8ms | Allocations: 10191)
+
+
+  
+NoMethodError (undefined method `truncate' for #<Article id: 2, title: "مثال تایتل", content: "در آخرین مرحله از تفاهم تبادل زندانیان میان ایران ...", date: nil, author: "بیژن", published: nil, category: nil, original: nil, created_at: "2023-09-20 16:40:22.334290000 +0000", updated_at: "2023-09-20 16:40:22.528950000 +0000">
+Did you mean?  trust):
+  
+app/controllers/pages_controller.rb:6:in `home'
+Started GET "/" for ::1 at 2023-09-20 19:21:23 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 48.7ms | Allocations: 14544)
+  Rendered shared/_pishkhan.html.erb (Duration: 3.3ms | Allocations: 1433)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.4ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 55.0ms | Allocations: 16716)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 9.5ms | Allocations: 3845)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 9107.3ms | Allocations: 123666)
+Completed 200 OK in 9134ms (Views: 9100.3ms | ActiveRecord: 14.7ms | Allocations: 129198)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:22:54 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 8.7ms | Allocations: 2320)
+  Rendered shared/_pishkhan.html.erb (Duration: 5.2ms | Allocations: 1611)
+  Rendered shared/_section.html.erb (Duration: 1.6ms | Allocations: 166)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.0ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 22.4ms | Allocations: 5268)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | Allocations: 1514)
+  Rendered shared/_flashes.html.erb (Duration: 1.9ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 17301)
+Completed 200 OK in 77ms (Views: 66.8ms | ActiveRecord: 1.3ms | Allocations: 18908)
+
+
+Started GET "/articles/2" for ::1 at 2023-09-20 19:22:58 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:63:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/_article.html.erb (Duration: 1.2ms | Allocations: 294)
+  Rendered articles/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1168)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 336)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 10976)
+Completed 200 OK in 35ms (Views: 22.3ms | ActiveRecord: 0.6ms | Allocations: 15770)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:25:40 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (7.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (18.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 50.9ms | Allocations: 2398)
+  Rendered shared/_pishkhan.html.erb (Duration: 60.0ms | Allocations: 1611)
+  Rendered shared/_section.html.erb (Duration: 15.2ms | Allocations: 166)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 134.7ms | Allocations: 5341)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 7.7ms | Allocations: 1514)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 199.1ms | Allocations: 17350)
+Completed 200 OK in 223ms (Views: 186.4ms | ActiveRecord: 27.3ms | Allocations: 19025)
+
+
+Started GET "/" for ::1 at 2023-09-20 19:26:12 +0200
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 12.3ms | Allocations: 2342)
+  Rendered shared/_pishkhan.html.erb (Duration: 5.1ms | Allocations: 1616)
+  Rendered shared/_section.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.3ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 1.2ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.5ms | Allocations: 28)
+  Rendered shared/_section.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered pages/home.html.erb within layouts/application (Duration: 31.2ms | Allocations: 5293)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:13
+  Rendered shared/_navbar.html.erb (Duration: 4.5ms | Allocations: 1514)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 17313)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 1.1ms | Allocations: 18895)
+
+
