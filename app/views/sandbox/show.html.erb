@@ -15,7 +15,7 @@
   <div class="form-inputs">
     <%= f.input :title, input_html: { value: @sandbox.edited_title } %>
     <%= f.input :content, as: :text, input_html: { value: @sandbox.edited_content, class: "textbox" } %>
-    <%= f.input :photo, as: :file %>
+    <%= if (@sandbox.photo_url == "") then f.input :photo, as: :file end %>
     <%= f.input :author %>
   </div>
 
