@@ -36,20 +36,20 @@ class DashboardController < ApplicationController
     end
     # END RADIOFARDA
 
-    # BEGIN DW
+    # BEGIN ISNA
     require 'rss'
     require 'open-uri'
-    url = 'http://rss.dw-world.de/xml/rss-per_politik_volltext'
+    url = 'http://isna.ir/fa/all/feed'
     URI.open(url) do |rss|
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
         if item.description != ''
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'دویچه وله')
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایسنا')
           sandbox.save!
         end
       end
     end
-    # END DW
+    # END ISNA
 
     #BEGIN ILNA
     require 'rss'
@@ -82,10 +82,10 @@ class DashboardController < ApplicationController
     # #END ENTEKHAB
 
   end
-  
+
   sandboxall = Sandbox.all
   sandboxall.each do |sandbox|
-    if sandbox.content.length > 500
+    if sandbox.content.length > 500 || sandbox.content.length < 100
       sandbox.destroy!
     end
   end
