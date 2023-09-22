@@ -1,22 +1,12 @@
 <div class="pishkhan">
  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
-    <div class="col">
-      <div class="pishkhan-item"><%= image_tag("articles/africa-2-1238855.jpeg", alt: "Edit Entry") %></div>
-      <div class="pishkhan-item-text">تأکید رئیس مجمع کارگران اخراجی و بی‌کار بر تداوم بازداشت‌ها</div>
-    </div>
-    <div class="col">
-      <div class="pishkhan-item"><%= image_tag("articles/africa-2-1238855.jpeg", alt: "Edit Entry") %></div>
-      <div class="pishkhan-item-text">تأکید رئیس مجمع کارگران اخراجی و بی‌کار بر تداوم بازداشت‌ها</div>
-    </div>
-    <div class="col">
-      <div class="pishkhan-item"><%= cl_image_tag("remote_media/01000000-0aff-0242-2486-08dbb9e173d7_cx0_cy3_cw0_w800_h450.jpg", alt: "Edit Entry") %></div>
-      <div class="pishkhan-item-text">تأکید رئیس مجمع کارگران اخراجی و بی‌کار بر تداوم بازداشت‌ها</div>
-    </div>
-    <div class="col">
-      <div class="pishkhan-item"><%= cl_image_tag("remote_media/01000000-0aff-0242-b25a-08dbb9dcad62_w800_h450.jpg", alt: "Edit Entry") %></div>
-      <div class="pishkhan-item-text">تأکید رئیس مجمع کارگران اخراجی و بی‌کار بر تداوم بازداشت‌ها</div>
-    </div>
+    <% count = 1 %>
+    <% @pishkhan.each do |item| %>
+      <div class="col">
+        <div class="pishkhan-item border border-secondary"><%= image_tag("articles/africa-2-1238855.jpeg", alt: item.title) %></div>
+        <div class="pishkhan-item-text"><%= item.title %></div>
+      </div>
+      <% count += 1 %>
+    <% end %>
   </div>
-
-
 </div>
