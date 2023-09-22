@@ -1,27 +1,19 @@
 <div class="section">
-  <div class="section-title">فیزیک</div>
-    <div class="section-item">
-        بعدشم همه رفتن خونه قیمت برق روستاهای نائین ۴۰ یورو گران شد
-    </div>
+<% count = 1 %>
+<% @categories.each do |category| %>
+  <% @akhbarebakhsh = @akhbar.where(category_id: 1) %>
+  <% while count <=5 do %>
+    <% @akhbarebakhsh.each do |khabar| %>
+      <div class="section-item">
 
-    <div class="section-item">
-        قیمت برق روستاهای نائین ۴۰ یورو گران شد
-    </div>
+          <%= khabar.title %>
+          <% count += 1 %>
 
-    <div class="section-item">
-        قیمت برق روستاهای نائین ۴۰ یورو گران شد
-    </div>
-
-    <div class="section-item">
-        قیمت برق روستاهای نائین ۴۰ یورو گران شد
-    </div>
-
-    <div class="section-item">
-        قیمت برق روستاهای نائین ۴۰ یورو گران شد
-    </div>
-
-    <div class="section-item">
-      <%= link_to "بیشتر", "/articles?q=all"%>
-    </div>
-
+      <% end %>
+      </div>
+  <% end %>
+<% end %>
+  <div class="section-item">
+    <%= link_to "بیشتر", "/articles?q=all"%>
+  </div>
 </div>

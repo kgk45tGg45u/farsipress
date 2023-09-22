@@ -1,7 +1,7 @@
 class DashboardController < ApplicationController
 
   def index
-    # fetch_articles
+    fetch_articles
     @sandboxes = Sandbox.all
   end
 
@@ -28,7 +28,7 @@ class DashboardController < ApplicationController
     URI.open(url) do |rss|
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
-        if item.description != ''
+        if item.description != '' && !item.enclosure.nil?
           sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا', photo_url: item.enclosure.url)
           sandbox.save!
         end
@@ -43,7 +43,7 @@ class DashboardController < ApplicationController
     # URI.open(url) do |rss|
     #   feed = RSS::Parser.parse(rss)
     #   feed.items.each do |item|
-    #     if item.description != ''
+    #     if item.description != '' && !item.enclosure.nil?
     #       sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایسنا')
     #       sandbox.save!
     #     end
@@ -58,7 +58,7 @@ class DashboardController < ApplicationController
     URI.open(url) do |rss|
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
-        if item.description != ''
+        if item.description != '' && !item.enclosure.nil?
           sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا', photo_url: item.enclosure.url)
           sandbox.save!
         end
@@ -73,7 +73,7 @@ class DashboardController < ApplicationController
     # URI.open(url) do |rss|
     #   feed = RSS::Parser.parse(rss)
     #   feed.items.each do |item|
-    #     if item.description != ''
+    #     if item.description != '' && !item.enclosure.nil?
     #       sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا')
     #       sandbox.save!
     #     end
