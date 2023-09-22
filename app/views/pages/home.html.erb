@@ -8,14 +8,135 @@
         <%= render 'shared/pishkhan' %>
       </div>
     </div>
-    <div class="col-xs-12 col-md-7">
-      <div class="row justify-content-md-center">
-        <% @categories.each do |category| %>
-          <div class="col-xs-12 col-md-5 border border-primary m-2">
-            <div class="section-title"><%= category.name %></div>
-            <%= render 'shared/section' %>
+    <div class="col-xs-12 col-md-7 my-2">
+      <div class="row justify-content-xs-center justify-content-md-end">
+          <div class="col-xs-12 col-md-5 border border-primary m-3">
+            <div class="section-title">سیاسی</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @siasi.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
           </div>
-        <% end %>
+
+          <div class="col-xs-12 col-md-5 border border-secondary m-3">
+            <div class="section-title">اقتصادی</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-success m-3">
+            <div class="section-title">جهان</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-danger m-3">
+            <div class="section-title">دانش</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-warning m-3">
+            <div class="section-title">استان‌ها</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-info m-3">
+            <div class="section-title">اقتصادی</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-dark m-3">
+            <div class="section-title">اقتصادی</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 border border-success m-3">
+            <div class="section-title">اقتصادی</div>
+            <div class="section">
+              <% count = 1 %>
+              <% @eghtesad.each do |khabar| %>
+                <div class="section-item">
+                  <%= khabar.title %>
+                  <% count += 1 %>
+                </div>
+              <% end %>
+                <div class="section-item">
+                  <%= link_to "بیشتر", "/articles?q=all"%>
+                </div>
+              </div>
+          </div>
 
       </div>
     </div>
