@@ -7,6 +7,7 @@ class PagesController < ApplicationController
     @akhbar = Article.all
     @pishkhan = @akhbar.drop(1)
     @categories = Category.all
-    # @akhabrebakhsh = @akhbar.where(category = category.name)
+    @siasi = @akhbar.where(category_id: 1)
+    @eghtesad = @akhbar.where(category_id: 2)
   end
 end

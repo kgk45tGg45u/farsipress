@@ -1,19 +1,15 @@
 <div class="section">
 <% count = 1 %>
-<% @categories.each do |category| %>
-  <% @akhbarebakhsh = @akhbar.where(category_id: 1) %>
-  <% while count <=5 do %>
-    <% @akhbarebakhsh.each do |khabar| %>
-      <div class="section-item">
-
-          <%= khabar.title %>
-          <% count += 1 %>
-
-      <% end %>
-      </div>
+<% while count <= 5 do %>
+  <% @siasi.each do |khabar| %>
+    <div class="section-item">
+      <%= khabar.title %>
+      <% count += 1 %>
   <% end %>
+    </div>
 <% end %>
-  <div class="section-item">
-    <%= link_to "بیشتر", "/articles?q=all"%>
-  </div>
+
+<div class="section-item">
+  <%= link_to "بیشتر", "/articles?q=all"%>
+</div>
 </div>

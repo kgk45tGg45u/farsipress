@@ -6,10 +6,11 @@
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.input :content %>
+    <%= f.input :photo, as: :file %>
     <%= f.input :date %>
     <%= f.input :author %>
     <%= f.input :published %>
-    <%= f.input :category %>
+    <%= f.input :category_id, collection: Category.all %>
     <%= f.input :original %>
   </div>
 
