@@ -1,15 +1,13 @@
 <div class="section">
 <% count = 1 %>
-<% @categories.each do |category| %>
-  <% @akhbarebakhsh = @akhbar.where(category_id: 1) %>
+<% @categories.each_with_index do |category, index| %>
+  <% @akhbarebakhsh = @akhbar.where(category_id: index+1) %>
   <% while count <=5 do %>
     <% @akhbarebakhsh.each do |khabar| %>
       <div class="section-item">
-
-          <%= khabar.title %>
-          <% count += 1 %>
-
-      <% end %>
+        <%= khabar.title %>
+        <% count += 1 %>
+    <% end %>
       </div>
   <% end %>
 <% end %>
