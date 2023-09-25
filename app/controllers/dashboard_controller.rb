@@ -16,7 +16,7 @@ class DashboardController < ApplicationController
     sandboxall.each do |item|
       tarikh = item.created_at
       today = Date.today
-      if today.strftime("%Y-%m-%d").to_i - tarikh.strftime("%Y-%m-%d").to_i >= 1
+      if (today - tarikh.to_date).to_i >= 1
         item.destroy!
       end
     end
@@ -29,7 +29,7 @@ class DashboardController < ApplicationController
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
         if item.description != '' && !item.enclosure.nil?
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا', photo_url: item.enclosure.url)
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'رادیو فردا', photo_url: item.enclosure.url, date: item.pubDate)
           sandbox.save!
         end
       end
@@ -59,7 +59,7 @@ class DashboardController < ApplicationController
       feed = RSS::Parser.parse(rss)
       feed.items.each do |item|
         if item.description != '' && !item.enclosure.nil?
-          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا', photo_url: item.enclosure.url)
+          sandbox = Sandbox.new(title: item.title, content: item.description, source: 'ایلنا', photo_url: item.enclosure.url, date: item.pubDate)
           sandbox.save!
         end
       end
