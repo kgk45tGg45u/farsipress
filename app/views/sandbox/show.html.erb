@@ -16,6 +16,8 @@
     <%= f.input :title, input_html: { value: @sandbox.edited_title } %>
     <%= f.input :content, as: :text, input_html: { value: @sandbox.edited_content, class: "textbox" } %>
     <%= if (@sandbox.photo_url == "") then f.input :photo, as: :file end %>
+    <%= f.input :date, input_html: { value: @sandbox.date } %>
+    <%= f.input :category_id, collection: Category.all %>
     <%= f.input :author %>
   </div>
 
