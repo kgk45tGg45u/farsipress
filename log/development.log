@@ -20727,3 +20727,103 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 165ms (Views: 128.1ms | ActiveRecord: 26.6ms | Allocations: 20044)
 
 
+Started GET "/" for ::1 at 2023-09-25 09:22:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (34.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/pages_controller.rb:8:in `drop'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (23.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (44.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 141.7ms | Allocations: 23441)
+  Rendered shared/_pishkhan.html.erb (Duration: 578.8ms | Allocations: 64370)
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/pages/home.html.erb:17
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/pages/home.html.erb:33
+  Rendered pages/home.html.erb within layouts/application (Duration: 731.4ms | Allocations: 90937)
+  Rendered shared/_navbar.html.erb (Duration: 5.5ms | Allocations: 762)
+  Rendered shared/_flashes.html.erb (Duration: 1.1ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 837.3ms | Allocations: 121415)
+Completed 200 OK in 992ms (Views: 767.0ms | ActiveRecord: 159.8ms | Allocations: 138496)
+
+
+Started GET "/" for ::1 at 2023-09-25 10:09:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:5:in `home'
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/pages_controller.rb:8:in `drop'
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_header_news.html.erb:4
+  Rendered shared/_header_news.html.erb (Duration: 76.2ms | Allocations: 23434)
+  Rendered shared/_pishkhan.html.erb (Duration: 10551.9ms | Allocations: 206857)
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/pages/home.html.erb:17
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/pages/home.html.erb:33
+  Rendered pages/home.html.erb within layouts/application (Duration: 10640.0ms | Allocations: 233417)
+  Rendered shared/_navbar.html.erb (Duration: 7.0ms | Allocations: 762)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 222)
+  Rendered layout layouts/application.html.erb (Duration: 10703.7ms | Allocations: 264744)
+Completed 200 OK in 10777ms (Views: 10706.0ms | ActiveRecord: 12.6ms | Allocations: 281825)
+
+
+Started GET "/articles/6" for ::1 at 2023-09-25 10:09:46 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 1916)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-09-25 10:09:46 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 730)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 46.0ms | Allocations: 10959)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 205)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 20794)
+Completed 200 OK in 119ms (Views: 62.3ms | ActiveRecord: 43.8ms | Allocations: 27823)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-09-25 10:09:49 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"bijans@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "bijans@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/articles/6
+Completed 303 See Other in 255ms (ActiveRecord: 1.7ms | Allocations: 5131)
+
+
+Started GET "/articles/6" for ::1 at 2023-09-25 10:09:49 +0200
+Processing by ArticlesController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:64:in `set_article'
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Article"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/articles/_article.html.erb:7
+  Rendered articles/_article.html.erb (Duration: 5.8ms | Allocations: 2436)
+  Rendered articles/show.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3518)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 306)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 13439)
+Completed 200 OK in 36ms (Views: 27.4ms | ActiveRecord: 1.1ms | Allocations: 18047)
+
+
