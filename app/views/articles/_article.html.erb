@@ -4,10 +4,9 @@
       <h3 style="margin-top:16px;"><%= article.title %></h3>
       <p class="card-text"><small class="text-muted"><%= @article.date %></small></p>
 
-      <%= cl_image_tag(@article.photo.key, crop: :fill, alt: "#{@article.title}", class: "m-2 float-start rounded") %>
+      <%= cl_image_tag("radiofarda/#{@article.cloudinary_url}", crop: :fill, alt: "#{@article.title}", class: "m-2 float-start rounded") %>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatskkwjghwku ewuhgo wuheguowh g wheoughw oego weuhgo whegowheoghw oeghwoeuhgo wuehgowhg owhg lwriguehr iguhirugh eirhgiwurhgiuwsfkguhw iruhwiurhgiwuhgiwuhiwuh iwuhiuwhiuwh iu hwieuhfiwueh iwuehiuwhe giuwhe iguhwieughw ieugh iweuhg iwuehg iuwehgi uwhe giuwhe ghguiwhkghs duhgfiwug iuw giuwh guiwheugihwughdksgwuh uwhriguhw righe rglei urgleriug liequrhgl iuqerlg iuqehrlgiu hqerligat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <%= article.content %>
       </p>
 
     </div>
