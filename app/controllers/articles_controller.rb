@@ -9,12 +9,13 @@ class ArticlesController < ApplicationController
   # GET /articles/1 or /articles/1.json
   def show
     @article = Article.last
-    
+
   end
 
   # GET /articles/new
   def new
     @article = Article.new
+
   end
 
   # GET /articles/1/edit
@@ -67,7 +68,7 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :content, :date, :author, :published, :category_id, :original, :photo)
+      params.require(:article).permit(:title, :content, :date, :author, :published, :category_id, :original, :photo, :cloudinary_url)
     end
 
 end

@@ -21,6 +21,9 @@ class SandboxController < ApplicationController
     # # آقای بایدن سپس با اشاره به تحریم اعمال‌شده علیه محمود احمدی‌نژاد و وزارت اطلاعات جمهوری اسلامی، «رژیم ایران» را فراخوانده است تا «روایت کاملی از آن‌چه بر باب لوینسن رفته‌است» ارائه دهد و تأکید کرده که خانوادۀ او سزاوار دریافت پاسخ پرسش‌های خود هستند.
     # # "
     @sandbox.edited_title.tr("لطفا این موضوع خبری را برایم بازنویسی کن: ", "")
+    if @sandbox.source == "رادیو فردا"
+      @sandbox.photo_url = @sandbox.photo_url.delete "https://gdb.rferl.org/"
+    end
     @article = Article.new
   end
 
