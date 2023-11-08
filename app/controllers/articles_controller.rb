@@ -8,14 +8,17 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1 or /articles/1.json
   def show
-    @article = Article.last
-    @b = @article.content.html_safe
+    @article = Article.find(params[:id])
+    j = @article.content
+    j.tr!('0123456789','۰١۲۳۴۵۶۷۸۹')
+    @b = j.html_safe
     gregorian = @article.created_at.strftime("%Y, %m, %d")
     gregoriany = @article.created_at.strftime("%Y").to_i
     gregorianm = @article.created_at.strftime("%m").to_i
     gregoriand = @article.created_at.strftime("%d").to_i
     d = Date.civil(gregoriany, gregorianm, gregoriand).to_parsi
     @parsid = d.strftime "%A %d %B %Y"
+    @parsid = @parsid.tr!('0123456789','۰١۲۳۴۵۶۷۸۹')
 
   end
 
