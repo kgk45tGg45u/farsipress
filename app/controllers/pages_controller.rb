@@ -7,8 +7,8 @@ class PagesController < ApplicationController
     j = @kholase
     j.tr!('0123456789','۰١۲۳۴۵۶۷۸۹')
     @b = j.html_safe
-    @akhbar = Article.all
-    @pishkhan = @akhbar.limit(9)
+    @akhbar = Article.all.order(id: :desc)
+    @pishkhan = @akhbar.offset(1).limit(9)
     # @pishkhan.reject!{|news| news == @headern}
     # @pishkhan = @pishkhan.sort {|a,b| b <=> a}
     @categories = Category.all
