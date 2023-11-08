@@ -10,6 +10,12 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.last
     @b = @article.content.html_safe
+    gregorian = @article.created_at.strftime("%Y, %m, %d")
+    gregoriany = @article.created_at.strftime("%Y").to_i
+    gregorianm = @article.created_at.strftime("%m").to_i
+    gregoriand = @article.created_at.strftime("%d").to_i
+    d = Date.civil(gregoriany, gregorianm, gregoriand).to_parsi
+    @parsid = d.strftime "%A %d %B %Y"
 
   end
 
