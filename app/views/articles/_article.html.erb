@@ -3,11 +3,13 @@
     <div class="col-lg-12 pt-2 pt-lg-0 rounded-3">
       <h3 style="margin-top:16px;"><%= article.title %></h3>
       <p class="card-text"><small class="text-muted"><%= @article.date %></small></p>
+      <div>
+      <%= cl_image_tag(@article.photo.key, crop: :fill, alt: "#{@article.title}", class: "m-2 float-start rounded") %>
+      </div>
+      <div>
+        <%= @b %>
+      </div>
 
-      <%= cl_image_tag("radiofarda/#{@article.cloudinary_url}", crop: :fill, alt: "#{@article.title}", class: "m-2 float-start rounded") %>
-      <p>
-        <%= article.content %>
-      </p>
 
     </div>
   </div>

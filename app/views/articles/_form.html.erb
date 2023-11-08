@@ -5,7 +5,7 @@
 
   <div class="form-inputs">
     <%= f.input :title %>
-    <%= f.input :content %>
+    <%= f.input :content, input_html: { class: "tinymce" } %>
     <%= f.input :photo, as: :file %>
     <%= f.input :date %>
     <%= f.input :author %>

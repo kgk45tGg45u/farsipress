@@ -7,6 +7,6 @@
     <p><%= @headern.title %></p>
   </div>
   <div class="header-news-kholase">
-    <p><%= @kholase %> <%= link_to "ادامه", article_path(@headern) %></p>
+    <p><%= strip_tags(@kholase) %> <%= link_to "ادامه", article_path(@headern) %></p>
   </div>
 </div>
