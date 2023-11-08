@@ -14,14 +14,14 @@
           <div class="col-xs-12 col-md-5 border border-dark my-2 mx-lg-2">
             <div class="section-title">سیاسی</div>
             <div class="section">
-              <% count = 1 %>
-              <% @siasi.each do |khabar| %>
-                <% while count <= 5 do %>
+
+              <% @siasi.find_each(order: :desc) do |khabar| %>
+
                   <div class="section-item">
                     <%= khabar.title %>
-                    <% count += 1 %>
+
                   </div>
-                <% end %>
+
               <% end %>
                 <div class="section-item">
                   <%= link_to "بیشتر", "/articles?q=all"%>

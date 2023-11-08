@@ -8,9 +8,11 @@ class PagesController < ApplicationController
     j.tr!('0123456789','۰١۲۳۴۵۶۷۸۹')
     @b = j.html_safe
     @akhbar = Article.all
-    @pishkhan = @akhbar.drop(1)
+    @pishkhan = @akhbar.limit(9)
+    # @pishkhan.reject!{|news| news == @headern}
+    # @pishkhan = @pishkhan.sort {|a,b| b <=> a}
     @categories = Category.all
-    @siasi = @akhbar.where(category_id: 1)
-    @eghtesad = @akhbar.where(category_id: 2)
+    @siasi = @akhbar.where(category_id: 1).limit(5)
+    @eghtesad = @akhbar.where(category_id: 2).limit(5)
   end
 end
