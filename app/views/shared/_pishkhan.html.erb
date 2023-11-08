@@ -3,7 +3,7 @@
     <% count = 1 %>
     <% @pishkhan.each do |item| %>
       <div class="col">
-        <div class="pishkhan-item border border-secondary"><%= image_tag("articles/africa-2-1238855.jpeg", alt: item.title) %></div>
+        <div class="pishkhan-item border border-secondary"><%= link_to cl_image_tag(item.photo.key, crop: :fill, alt: "#{item.title}"), article_path(item) %></div>
         <div class="pishkhan-item-text"><%= item.title %></div>
       </div>
       <% count += 1 %>

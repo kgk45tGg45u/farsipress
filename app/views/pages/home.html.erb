@@ -6,7 +6,6 @@
       </div>
       <div class="col-xs-6 my-2 border">
         <%= render 'shared/pishkhan' %>
-        <%= text_area_tag :content, "Hello, World!", :class => "tinymce" %>
 
       </div>
     </div>
@@ -17,10 +16,12 @@
             <div class="section">
               <% count = 1 %>
               <% @siasi.each do |khabar| %>
-                <div class="section-item">
-                  <%= khabar.title %>
-                  <% count += 1 %>
-                </div>
+                <% while count <= 5 do %>
+                  <div class="section-item">
+                    <%= khabar.title %>
+                    <% count += 1 %>
+                  </div>
+                <% end %>
               <% end %>
                 <div class="section-item">
                   <%= link_to "بیشتر", "/articles?q=all"%>
