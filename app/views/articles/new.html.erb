@@ -1,11 +1,13 @@
 <div class="container">
-  <h1>New article</h1>
+  <div class="article-new-edit">
+    <h1>مقاله جدید</h1>
 
-  <%= render "form", article: @article %>
+    <%= render "form", article: @article %>
 
-  <br>
+    <br>
 
-  <div>
-    <%= link_to "Back to articles", articles_path %>
+    <div>
+      <%= link_to "Back to articles", articles_path %>
+    </div>
   </div>
 </div>
