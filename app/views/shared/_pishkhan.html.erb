@@ -1,10 +1,10 @@
 <div class="pishkhan">
- <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
+ <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-3">
     <% count = 1 %>
     <% @pishkhan.find_each(order: :desc) do |item| %>
       <div class="col">
-        <div class="pishkhan-item border border-secondary"><%= link_to cl_image_tag(item.photo.key, crop: :fill, alt: "#{item.title}"), article_path(item) %></div>
-        <div class="pishkhan-item-text"><%= item.title %></div>
+        <div class="pishkhan-item"><%= link_to cl_image_tag(item.photo.key, crop: :fill, alt: "#{item.title}"), article_path(item) %></div>
+        <div class="pishkhan-item-text"><%= link_to item.title, article_path(item) %></div>
       </div>
       <% count += 1 %>
     <% end %>
